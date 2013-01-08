@@ -2,7 +2,7 @@ package confs
 
 import (
 	"log"
-	"tfe"
+	"github.com/xianxu/tfe"
 )
 
 func init() {

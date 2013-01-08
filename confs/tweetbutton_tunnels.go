@@ -1,10 +1,10 @@
 package confs
 
 import (
-	"gostrich"
+	"github.com/xianxu/gostrich"
+	"github.com/xianxu/rpcx"
+	"github.com/xianxu/tfe"
 	"log"
-	"rpcx"
-	"tfe"
 	"time"
 )
 
