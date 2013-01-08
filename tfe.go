@@ -7,7 +7,7 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"rpcx"
+	"github.com/xianxu/rpcx"
 	"strconv"
 	"strings"
 	"time"

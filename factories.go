@@ -1,9 +1,9 @@
 package tfe
 
 import (
-	"gostrich"
+	"github.com/xianxu/gostrich"
 	"net/http"
-	"rpcx"
+	"github.com/xianxu/rpcx"
 	"time"
 )
 

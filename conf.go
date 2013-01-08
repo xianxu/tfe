@@ -1,7 +1,7 @@
 package tfe
 
 import (
-	"gostrich"
+	"github.com/xianxu/gostrich"
 	"log"
 	"strings"
 )

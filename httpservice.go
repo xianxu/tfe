@@ -2,7 +2,7 @@ package tfe
 
 import (
 	"errors"
-	"gostrich"
+	"github.com/xianxu/gostrich"
 	"log"
 	"net/http"
 	"time"
