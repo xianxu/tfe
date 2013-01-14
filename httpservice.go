@@ -5,7 +5,6 @@ import (
 	"github.com/xianxu/gostrich"
 	"log"
 	"net/http"
-	"time"
 )
 
 var (
@@ -23,7 +22,11 @@ type HttpService struct {
 	CacheResponseBody bool
 }
 
-func (h *HttpService) Serve(req interface{}, rsp interface{}, timeout time.Duration) (err error) {
+func (h *HttpService) Close() error {
+	return h.Close()
+}
+
+func (h *HttpService) Serve(req interface{}, rsp interface{}, _ chan int) (err error) {
 	var httpReq *http.Request
 	var httpRsp *http.Response
 	var ok bool

@@ -32,7 +32,7 @@ func CreateStaticHttpCluster(config StaticHttpCluster) *rpcx.Cluster {
 	}
 	for i, h := range config.Hosts {
 		httpService := &HttpService{&http.Transport{}, h, config.CacheResponseBody}
-		withTimeout := &rpcx.ServiceWithTimeout{httpService, config.Timeout}
+		withTimeout := &rpcx.RobustService{Service:httpService, Timeout:config.Timeout}
 		var reporter rpcx.ServiceReporter
 		if config.PerHostStats {
 			reporter = NewHttpStatsReporter(gostrich.AdminServer().GetStats().Scoped(config.Name).Scoped(h))

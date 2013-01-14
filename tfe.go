@@ -144,9 +144,7 @@ func (rs *Rules) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 			var rsp http.Response
 
-			// TODO: better interface, timeout's not used here, it's specified when underlying
-			// HttpService is created.
-			err = s.Serve(r, &rsp, time.Second)
+			err = s.Serve(r, &rsp, nil)
 
 			if err != nil {
 				log.Printf("Error occurred while proxying for rule %v: %v\n", ruleName, err.Error())
