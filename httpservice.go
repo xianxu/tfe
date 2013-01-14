@@ -26,7 +26,7 @@ func (h *HttpService) Close() error {
 	return h.Close()
 }
 
-func (h *HttpService) Serve(req interface{}, rsp interface{}, _ chan int) (err error) {
+func (h *HttpService) Serve(req interface{}, rsp interface{}, _ *bool) (err error) {
 	var httpReq *http.Request
 	var httpRsp *http.Response
 	var ok bool
