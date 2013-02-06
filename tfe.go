@@ -4,10 +4,10 @@ package tfe
  * A simple front end server that proxies request, as in Tfe
  */
 import (
+	"github.com/xianxu/rpcx"
 	"io"
 	"log"
 	"net/http"
-	"github.com/xianxu/rpcx"
 	"strconv"
 	"strings"
 	"time"

@@ -2,9 +2,9 @@ package confs
 
 import (
 	"github.com/xianxu/gostrich"
-	"log"
 	"github.com/xianxu/rpcx"
 	"github.com/xianxu/tfe"
+	"log"
 	"time"
 )
 
